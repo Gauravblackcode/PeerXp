@@ -1,0 +1,11 @@
+.form-class{
+  background-color: whitesmoke;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.head{
+  margin: auto;
+  padding: 2rem;
+  font-weight: bolder;
+  color: white;
+}
