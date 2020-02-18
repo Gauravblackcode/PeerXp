@@ -1,7 +1,5 @@
-<div class="container">
-
-  <form >
-    <!-- (submit)="onAddPost(postForm)" #postForm="ngForm" -->
+<div class="container" >
+  <form   (submit)="onAddPost(postForm)" #postForm="ngForm" >
     <div class="row">
       <h2 class="head">MeanApp</h2>
     </div>
@@ -9,12 +7,14 @@
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter e-mail">
+            <input type="email" class="form-control"  ngModel required name="email"
+            id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter e-mail">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group">
             <label for="inputText">Message</label><br>
-            <textarea name="messageInput" id="messageInput" class="form-control" style="height: 10rem;" placeholder="Enter your message"></textarea>
+            <textarea name="message" id="messageInput" ngModel required
+            class="form-control" style="height: 10rem;" placeholder="Enter your message"></textarea>
           </div>
       </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
@@ -24,20 +24,21 @@
             </div>
             <div class="form-group">
               <label for="inputText">Phone <span class="text-muted font-italic">Optional</span></label>
-              <input type="text" class="form-control" id="textMessage" placeholder="Enter your Phone Number">
+              <input type="text" class="form-control"
+              ngModel name="phone" id="textMessage" placeholder="Enter your Phone Number">
             </div>
             <div class="form-group">
               <label for="inputText">Organization<span class="text-muted font-italic">Optional</span> </label>
-              <input type="text" class="form-control" id="textMessage" placeholder="Enter Your Organization name">
+              <input type="text" class="form-control"
+              ngModel name="organization" id="textMessage" placeholder="Enter Your Organization name">
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <input type="checkbox" class="form-check-input" name="check"
+              ngModel required id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Check me out</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
-
   </form>
-
 </div>
