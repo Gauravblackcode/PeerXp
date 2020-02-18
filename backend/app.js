@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://mark:baba2301@cluster0-tepxu.mongodb.net/meanStack?retryWrites=true&w=majority", { useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://mark:<Password>@cluster0-tepxu.mongodb.net/meanStack?retryWrites=true&w=majority", { useNewUrlParser: true , useUnifiedTopology: true })
 .then(() => {
   console.log("connected to the database");
 })
